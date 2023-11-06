@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Loan Calculator</h2>
+        
+        <form action="" class="form">
+            <div>
+                <label for="amount">Amount</label><br>
+                <input type="number" id="amount" data-type="currency" placeholder="Amount">
+            </div>
+            
+            <div>
+                <label for="intrstrt">Interest Rate(per annual)</label><br>
+                <input type="number" id="intrstrt" placeholder="Interest Rate">
+            </div>
+            
+            <div>
+                <label for="intrstrt">Tenure(in months)</label><br>
+                <input type="number" id="period" placeholder="Period">
+            </div>
+        </form>
+        
+        <div class="buttonset">
+            <button style="background-color:#4b6cb7; ;" onclick="calculate()">Calculate</button>
+            <button style="background-color: #d53369;" onclick="reset()">Reset</button>
+        </div>
+        
+        <div class="line">
+        </div>
+        <h3>Total interest</h3>
+        <p id="tinterest">0.00</p>
+
+        <div class="line">
+        </div>
+
+        <h3>Interest per month</h3>
+        <p id="minterest">0.00</p>
+
+        <div class="line">
+        </div>
+
+        <h3>Total amount</h3>
+        <p id="tamount">0.00</p>
+
+        <div class="line">
+        </div>
+
+        <h3>Monthly payment</h3>
+        <p id="tmonthlypay">0.00</p>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
